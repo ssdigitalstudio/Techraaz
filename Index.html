@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Techraaz - Latest technology, AI, apps, gadgets and digital updates.">
+  <title>Techraaz - Technology & Digital World</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      padding: 75px 6%;
+      background: linear-gradient(135deg, #111827, #1e3a8a);
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      color: #dbeafe;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 25px;
+      background: #38bdf8;
+      color: #07111f;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 55px 6%;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card-top {
+      height: 150px;
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .read {
+      display: inline-block;
+      margin-top: 15px;
+      color: #2563eb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .about {
+      background: white;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      color: #64748b;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #111827;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 28px 6%;
+    }
+
+    footer strong {
+      color: #38bdf8;
+    }
+
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Tech<span>raaz</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#latest">Latest</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to <span>Techraaz</span></h1>
+
+    <p>
+      Discover the latest technology, AI tools, apps, gadgets,
+      smartphones and digital trends — all in one place.
+    </p>
+
+    <a href="#latest" class="button">Explore Latest</a>
+  </section>
+
+  <section class="section" id="latest">
+    <h2>Latest Technology</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">AI</div>
+
+        <div class="card-content">
+          <h3>Artificial Intelligence</h3>
+
+          <p>
+            Explore the world of AI, new tools, useful websites
+            and the latest artificial intelligence trends.
+          </p>
+
+          <a href="#" class="read">Read More →</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-top">📱</div>
+
+        <div class="card-content">
+          <h3>Smartphones</h3>
+
+          <p>
+            Get updates about new smartphones, features,
+            apps, tips and interesting mobile technology.
+          </p>
+
+          <a href="#" class="read">Read More →</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-top">💻</div>
+
+        <div class="card-content">
+          <h3>Tech & Gadgets</h3>
+
+          <p>
+            Discover useful gadgets, computers, accessories
+            and exciting technology from around the world.
+          </p>
+
+          <a href="#" class="read">Read More →</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-top">🌐</div>
+
+        <div class="card-content">
+          <h3>Internet & Apps</h3>
+
+          <p>
+            Learn about useful apps, websites, online tools
+            and important digital updates.
+          </p>
+
+          <a href="#" class="read">Read More →</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-top">🔐</div>
+
+        <div class="card-content">
+          <h3>Cyber Security</h3>
+
+          <p>
+            Learn simple ways to stay safe online and protect
+            your accounts, devices and personal information.
+          </p>
+
+          <a href="#" class="read">Read More →</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-top">🚀</div>
+
+        <div class="card-content">
+          <h3>Future Technology</h3>
+
+          <p>
+            Explore upcoming technologies and innovations
+            that could change the way we live and work.
+          </p>
+
+          <a href="#" class="read">Read More →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section about" id="about">
+    <h2>About Techraaz</h2>
+
+    <p>
+      Techraaz is a technology-focused platform created to make
+      technology easier to understand. We cover AI, smartphones,
+      gadgets, apps, internet, cybersecurity and future technology.
+    </p>
+  </section>
+
+
+  <footer>
+    <p>© 2026 <strong>Techraaz</strong>. All Rights Reserved.</p>
+    <p>Technology • AI • Gadgets • Digital World</p>
+  </footer>
+
+</body>
+</html>
